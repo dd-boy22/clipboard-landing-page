@@ -22,15 +22,15 @@ function Navbar() {
 
 
         <ul className="hidden lg:flex lg:items-center">
-          <li className="p-4 uppercase text-sm">
+          <li className="p-4 uppercase text-sm text-gray-700 hover:text-gray-950">
            <Link to='/howWeWork'>
            How we work
            </Link> 
            </li>
-          <li className="p-4 uppercase text-sm"><Link to='/blog'>Blog</Link> </li>
-          <li className="p-4 uppercase text-sm">
+          <li className="p-4 uppercase text-sm text-gray-700 hover:text-gray-950"><Link to='/blog'>Blog</Link> </li>
+          <li className="p-4 uppercase text-sm text-gray-700 hover:text-gray-950">
            <Link to='/account'>Account</Link></li>
-          <li className="p-4 uppercase text-sm">
+          <li className="p-4 uppercase text-sm text-gray-700 hover:text-gray-950">
             <Buttonn to='/viewPlans' className="border-2 border-blue-950 text-gray-950 px-5 py-1.5 uppercase hover:text-white hover:bg-gray-950 transition-colors rounded" >view plans</Buttonn>
           </li>
         </ul>
@@ -44,11 +44,10 @@ function Navbar() {
           className="lg:hidden relative z-110 cursor-pointer"
         >
           <img
-            className=""
             src={
               nav ? "./images/icon-close.svg" : "./images/icon-hamburger.svg"
             }
-            alt=""
+            alt="icon hamburger"
           />
         </button>
       </div>
